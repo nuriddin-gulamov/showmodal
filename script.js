@@ -22,5 +22,12 @@ showModal.forEach(function (button) {
             modal.classList.add("hidden");
             overlay.classList.add("hidden"); 
         });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                modal.classList.add("hidden");
+                overlay.classList.add("hidden"); 
+            };
+        });
     });
 });
